@@ -1,0 +1,16 @@
+<p>
+    <a href="#/">Back to Search</a>
+</p>
+<h3>Today's Weather Stats </h3>
+<hr/>
+<div class="col-md-6 col-md-offset-3">
+  <h4>Stat's for {{city}}</h4>
+  <h4>Date : {{ todayDate(todayResult.dt) | date : "MMM d,y &nbsp; &mdash; &nbsp; EEEE" }}</h4>
+  <hr/>
+  <div class="well">
+    <h4>Today's Humiidty : {{todayResult.main.humidity}} %</h4>
+    <h4>Today's Max Temperature : {{todayResult.main.temp_max - 273 }} &deg;C</h4>
+    <h4>Today's Min Temperature : {{todayResult.main.temp_min - 273 }} &deg;C</h4>
+    <h4>Today's Prediction : {{todayResult.weather[0].description}}</h4>
+  </div>
+</div>
