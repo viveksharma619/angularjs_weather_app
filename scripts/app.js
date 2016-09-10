@@ -7,19 +7,19 @@ var weatherApp = angular.module('weatherApp', ["ngRoute","ngResource"]);
 weatherApp.config(function ($routeProvider) {
     $routeProvider.
     when('/', {
-        templateUrl: 'pages/home.html',
+        templateUrl: 'Pages/home.html',
         controller:'homeController'
     })
     .when('/forecast', {
-        templateUrl: 'pages/forecast.html',
+        templateUrl: 'Pages/forecast.html',
         controller:'forecastController'
     })
     .when('/forecast/:days', {
-        templateUrl: 'pages/forecast.html',
+        templateUrl: 'Pages/forecast.html',
         controller: 'forecastController'
     })
     .when('/today',{
-      templateUrl:'pages/today.html',
+      templateUrl:'Pages/today.html',
       controller: 'todayController'
     })
 });
